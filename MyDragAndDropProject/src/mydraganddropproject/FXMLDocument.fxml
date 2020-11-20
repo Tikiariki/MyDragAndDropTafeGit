@@ -2,9 +2,12 @@
 
 <?import javafx.scene.image.ImageView?>
 <?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Text?>
 
 <AnchorPane id="AnchorPane" prefHeight="343.0" prefWidth="480.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="mydraganddropproject.FXMLDocumentController">
     <children>
       <ImageView fx:id="imageView" fitHeight="215.0" fitWidth="368.0" layoutX="62.0" layoutY="90.0" onDragDropped="#handleDrop" onDragOver="#handleDragOver" pickOnBounds="true" preserveRatio="true" />
+      <Text fx:id="source" layoutX="51.0" layoutY="54.0" onDragDetected="#handleDragDetection" strokeType="OUTSIDE" strokeWidth="0.0" text="Source String" />
+      <Text fx:id="target" layoutX="367.0" layoutY="54.0" onDragDropped="#handleTextDrop" onDragOver="#handleTextDragOver" strokeType="OUTSIDE" strokeWidth="0.0" text="Destination" />
     </children>
 </AnchorPane>
